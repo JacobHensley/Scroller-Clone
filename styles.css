@@ -1,0 +1,102 @@
+#root {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body
+{
+	background-color: #181818;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.topnav {
+  background-color: #212121;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
+input[type=text] {
+	background-color: #3D3D3D;
+	color: #f8f8ff;
+	width: 35%;
+	height: 35px;
+	font-size: 14pt;
+	display: block;
+	margin: 10px auto;
+	border: none;
+
+	background-image: url('icons/search-icon.svg');
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	background-size: 25px 25px;
+	padding-left: 35px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+::placeholder {
+  color: #AAAAAA;
+}
+
+.card {
+	break-inside: avoid;
+	font-size: 0;
+	position: relative;
+	margin: 0px 5px 10px;
+}
+
+.container {
+	column-count: 2;
+	column-gap: 0px;
+}
+
+video:focus {
+    outline: none;
+}
+
+.card:hover #srcButton
+{
+    background-image:url(icons/link-icon.svg);
+	top: calc(100% - 155px);
+}
+
+.card:hover #postButton
+{
+    background-image:url(icons/reddit-icon.svg);
+	top: calc(100% - 110px);
+}
+
+.card:hover .mediaButtons
+{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	background-size:contain;
+    background-position: center;
+
+	border: none;
+	position:absolute;
+	display: block;
+    width: 50px;
+    height:50px;
+	margin: 0px 5px;
+    left: calc(100% - 65px);
+}
+
+.mediaButtons
+{
+	display: none;
+}
+
+.mediaButtons:focus {
+    outline: none;
+	border: none;
+}
+
+.mediaButtons:active {
+	transform: scale(.9);
+}
